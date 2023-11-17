@@ -1,0 +1,21 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: false
+
+    Ibexa\ProductCatalogDateAttribute\AttributeType:
+        tags:
+            -   name: ibexa.product_catalog.attribute_type
+                alias: date
+
+    Ibexa\ProductCatalogDateAttribute\ValueFormMapper:
+        tags:
+            -   name: ibexa.product_catalog.attribute.form_mapper.value
+                type: date
+
+    Ibexa\ProductCatalogDateAttribute\ValueFormatter:
+        tags:
+            -   name: ibexa.product_catalog.attribute.formatter.value
+                type: date
+
