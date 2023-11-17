@@ -1,0 +1,2 @@
+CREATE TABLE ibexa_product_specification_attribute_date (id INT NOT NULL, value DATE DEFAULT NULL COMMENT '(DC2Type:date_immutable)', INDEX ibexa_product_specification_attribute_date_value_idx (value), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE `utf8_unicode_ci` ENGINE = InnoDB;
+ALTER TABLE ibexa_product_specification_attribute_date ADD CONSTRAINT ibexa_product_specification_attribute_date_fk FOREIGN KEY (id) REFERENCES ibexa_product_specification_attribute (id) ON UPDATE CASCADE ON DELETE CASCADE;

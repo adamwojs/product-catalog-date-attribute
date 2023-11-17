@@ -4,6 +4,7 @@ declare(strict_types=1);
 namespace Ibexa\ProductCatalogDateAttribute;
 
 use Ibexa\Contracts\ProductCatalog\Values\AttributeTypeInterface;
+use JMS\TranslationBundle\Annotation\Desc;
 use Symfony\Contracts\Translation\TranslatorInterface;
 
 final class AttributeType implements AttributeTypeInterface

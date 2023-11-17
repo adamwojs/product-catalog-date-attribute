@@ -1,0 +1,18 @@
+tables:
+    ibexa_product_specification_attribute_date:
+        id:
+            id:
+                type: integer
+                nullable: false
+                foreignKey:
+                    name: ibexa_product_specification_attribute_date_fk
+                    table: ibexa_product_specification_attribute
+                    field: id
+                    options:
+                        onDelete: CASCADE
+                        onUpdate: CASCADE
+        fields:
+            value:
+                type: date_immutable
+                nullable: true
+                index: ibexa_product_specification_attribute_date_value_idx

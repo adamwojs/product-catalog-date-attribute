@@ -19,3 +19,13 @@ services:
             -   name: ibexa.product_catalog.attribute.formatter.value
                 type: date
 
+    Ibexa\ProductCatalogDateAttribute\StorageConverter:
+        tags:
+            -   name: ibexa.product_catalog.attribute.storage_converter
+                type: date
+
+    Ibexa\ProductCatalogDateAttribute\StorageDefinition:
+        tags:
+            -   name: ibexa.product_catalog.attribute.storage_definition
+                type: date
+
